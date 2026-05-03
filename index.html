@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Проверка документа по QR-коду</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Roboto, Arial, sans-serif;
+        background: #f5f6f7;
+    }
+
+    .layout {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* Шапка */
+    .header {
+        padding: 30px 0;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 30px;
+        background: white;
+    }
+
+    /* Основная часть */
+    .main {
+        flex: 1;
+        padding: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .content {
+        background: #fff;
+        padding: 32px;
+        border-radius: 15px;
+        max-width: 1180px;
+        width: 100%;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .status-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        color: #000;
+    }
+
+    /* Секции с данными */
+    .xslt_section {
+        margin-bottom: 24px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        color: #333;
+        line-height: 1.5;
+    }
+
+    .xslt_text_bold {
+        font-weight: bold;
+        margin-bottom: 4px;
+        color: #000;
+        font-size: 15px;
+    }
+
+    /* Места под картинки (Плейсхолдеры) */
+    .img-placeholder {
+        background: #f0f0f0;
+        border: 1px dashed #bbb;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #999;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    /* Подвал (Footer) */
+    .desktop-footer-wrapper {
+        background: white;
+        width: 100%;
+        border-top: 1px solid #e0e0e0;
+        padding: 25px 0;
+    }
+
+    .desktop-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+
+    .footer-icons {
+        display: flex;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .dit-group {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .desktop-footer-text {
+        font-size: 12px;
+        color: #666;
+        max-width: 160px;
+        line-height: 1.3;
+    }
+</style>
+</head>
+<body>
+
+<div class="layout">
+    <div class="header">
+        <div class="img-placeholder" style="width: 180px; height: 55px;">
+            <span>место под лого емиас</span>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="content">
+            <div class="status-title">Документ действителен</div>
+
+            <div class="xslt_section">
+                <div class="xslt_text_bold">Наименование</div>
+                <div>Справка о временной нетрудоспособности студента, учащегося техникума, профессионально-технического училища, о болезни, карантине и прочих причинах отсутствия ребенка, посещающего школу, детское дошкольное учреждение</div>
+            </div>
+
+            <div class="xslt_section">
+                <div class="xslt_text_bold">Пациент</div>
+                <div>Савва Иванович Э.</div>
+            </div>
+
+            <div class="xslt_section">
+                <div class="xslt_text_bold">Наименование медицинской организации</div>
+                <div>ГП 214 ф 2 (ГП 54)</div>
+            </div>
+
+            <div class="xslt_section">
+                <div class="xslt_text_bold">Дата оформления</div>
+                <div>12.05.2026</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="desktop-footer-wrapper">
+        <div class="desktop-footer">
+            
+            <div class="img-placeholder" style="width: 150px; height: 64px;">
+                <span>лого емиас</span>
+            </div>
+
+            <div class="footer-icons">
+                
+                <div class="img-placeholder" style="width: 110px; height: 90px;">
+                    <span>лого mos.ru</span>
+                </div>
+
+                <div class="dit-group">
+                    <div class="img-placeholder" style="width: 80px; height: 65px;">
+                        <span>лого дит</span>
+                    </div>
+                    <span class="desktop-footer-text">Департамент информационных технологий</span>
+                </div>
+
+                <div class="img-placeholder" style="width: 130px; height: 70px;">
+                    <span>лого мосгорздрав</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
